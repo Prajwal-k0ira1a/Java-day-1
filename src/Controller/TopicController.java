@@ -2,11 +2,9 @@ package Controller;
 
 import Model.Topic;
 import java.util.ArrayList;
-import java.util.List;
 
 public class TopicController {
-
-    private List<Topic> topicList = new ArrayList<>();
+    private ArrayList<Topic> topicList = new ArrayList<>();
     private int idCounter = 1;
 
     public boolean addTopic(String name) {
@@ -20,11 +18,12 @@ public class TopicController {
         return true;
     }
 
-    public List<Topic> getAllTopics() {
+    public ArrayList<Topic> getAllTopics() {
         return topicList;
     }
 
     public boolean isEmpty() {
         return topicList.isEmpty();
     }
+
 }
